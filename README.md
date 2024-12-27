@@ -54,6 +54,9 @@ If the RPi-Connect doesnt want to start reinstall the entire OS and do the ```su
 ## Edit the hosts file
 ```sudo nano /etc/hosts```
 
+## Edit the host file and change the ip to your Raspberry Pi ip
+![image](https://github.com/user-attachments/assets/5eee3c12-7cab-4c66-a65c-c521d8bc3694)
+
 ## Install the pve-qemu-kvm package
 ```sudo apt install pve-qemu-kvm -y```
 
@@ -62,9 +65,6 @@ If the RPi-Connect doesnt want to start reinstall the entire OS and do the ```su
 
 ## Reboot your server
 ```sudo reboot```
-
-## Edit the host file and change the ip to your Raspberry Pi ip
-![image](https://github.com/user-attachments/assets/5eee3c12-7cab-4c66-a65c-c521d8bc3694)
 
 ## Install the Bridge-Utils package
 ```sudo apt install bridge-utils -y```
