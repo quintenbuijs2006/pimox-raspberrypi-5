@@ -70,3 +70,22 @@ When the settings show up press edit and enable ssh then put a username and pass
 
 ## Runs the Pimox script
 ```./RPiOS64-IA-Install.sh```
+
+## Reboot the server
+```reboot```
+
+## Makes the commands so you dont have to use sudo
+```sudo -s```
+
+## Updates the pi
+```apt upgrade -y```
+
+## In the proxmox shell run this command
+```bash -c "$(wget -qLO - https://github.com/tteck/Proxmox/raw/main/vm/pimox-haos-vm.sh)"```
+
+Now stop the vm.
+In the VM options, enable QEMU Guest Agent.
+In the VM options, resize the disk. Either 24 or 32 are okay. More than that and it’s overkill.
+NOTE: THE “increment” IS THE AMOUNT THAT WILL ADD OVER THE EXISTING DISK.
+If you are running the 4GB model or plan on running more VMs, in the options menu, set the
+allocated RAM to 2 GB.
