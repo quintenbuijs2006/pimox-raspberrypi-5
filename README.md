@@ -28,6 +28,9 @@ When the settings show up press edit and enable ssh then put a username and pass
 ## Connects your RPi-Connect to your Raspberry account
 ```rpi-connect signin```
 
+## Enable User-Lingering to access your Raspberry Pi when no user is logged in
+```loginctl enable-linger```
+
 ## Downloads the Proxmox repository
 ```curl http://global.mirrors.apqa.cn/proxmox/debian/pveport.gpg -o /etc/apt/trusted.gpg.d/pveport.gpg```
 
