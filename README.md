@@ -46,8 +46,10 @@ When the settings show up press edit and enable ssh then put a username and pass
 ## Put this in your interfaces file and change the ip and gateway
 ![image](https://github.com/user-attachments/assets/c523b337-c890-4937-af00-af8df9198aff)
 
-## Edit the host file and change the ip to your Raspberry Pi ip
+## Edit the hosts file
 ```nano /etc/hosts```
+
+## Edit the host file and change the ip to your Raspberry Pi ip
 ![image](https://github.com/user-attachments/assets/5eee3c12-7cab-4c66-a65c-c521d8bc3694)
 
 ## Adds the vmbr0 Bridge
