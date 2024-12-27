@@ -54,6 +54,15 @@ If the RPi-Connect doesnt want to start reinstall the entire OS and do the ```su
 ## Edit the hosts file
 ```nano /etc/hosts```
 
+## Install the pve-qemu-kvm package
+```apt install pve-qemu-kvm```
+
+## Install the proxmox-ve package
+```apt install proxmox-ve```
+
+## Reboot your server
+```reboot```
+
 ## Edit the host file and change the ip to your Raspberry Pi ip
 ![image](https://github.com/user-attachments/assets/5eee3c12-7cab-4c66-a65c-c521d8bc3694)
 
