@@ -1,7 +1,17 @@
 # pimox-raspberrypi-5
 Install Proxmox on a raspberrypi 5
 
-Run the following commands to have proxmox on a raspberrypi 5 ^^
+Install This OS via the Raspberry Pi Imager
+
+## Go to Raspberry Pi OS (other)
+![image](https://github.com/user-attachments/assets/f7b947ac-93e5-4760-bef2-cdc76a4c973c)
+
+## Select Raspberry PI OS Lite (64-bit)
+![image](https://github.com/user-attachments/assets/a90adb04-5552-4803-981d-3532a17063c0)
+
+When the settings show up press edit and enable ssh then put a username and password in there you want to use
+
+# Run the following commands to have proxmox on a raspberrypi 5 ^^
 
 ## updates the resporitory list and updates the pi
 apt update && apt upgrade -y
