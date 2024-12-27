@@ -57,6 +57,9 @@ If the RPi-Connect doesnt want to start reinstall the entire OS and do the ```su
 ## Edit the host file and change the ip to your Raspberry Pi ip
 ![image](https://github.com/user-attachments/assets/5eee3c12-7cab-4c66-a65c-c521d8bc3694)
 
+## Install the Bridge-Utils package
+```sudo apt install bridge-utils -y```
+
 ## Adds the vmbr0 Bridge
 ```sudo brctl addbr vmbr0```
 
