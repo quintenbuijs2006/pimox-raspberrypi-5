@@ -85,6 +85,9 @@ If the RPi-Connect doesnt want to start reinstall the entire OS and do the ```su
 ## Makes the install script that it can run
 ```sudo chmod +x RPiOS64-IA-Install.sh```
 
+## Reboot your server
+```sudo reboot```
+
 ## Runs the Pimox script
 ```sudo ./RPiOS64-IA-Install.sh```
 
