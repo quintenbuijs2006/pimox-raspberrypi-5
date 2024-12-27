@@ -19,10 +19,10 @@ If the RPi-Connect doesnt want to start reinstall the entire OS and do the ```su
 ```sudo -s```
 
 ## updates the resporitory list and updates the Pi
-```apt update && apt upgrade -y```
+```sudo apt update && apt upgrade -y```
 
 ## Installs RPi-Connect so that you can access your Raspberry Pi from the internet at [Raspberry Pi Connect Site](https://connect.raspberrypi.com)
-```apt install rpi-connect-lite```
+```sudo apt install rpi-connect-lite```
 
 ## Turns the RPi-Connect on
 ```rpi-connect on```
@@ -34,31 +34,31 @@ If the RPi-Connect doesnt want to start reinstall the entire OS and do the ```su
 ```loginctl enable-linger```
 
 ## Downloads the Proxmox repository
-```curl http://global.mirrors.apqa.cn/proxmox/debian/pveport.gpg -o /etc/apt/trusted.gpg.d/pveport.gpg```
+```sudo curl http://global.mirrors.apqa.cn/proxmox/debian/pveport.gpg -o /etc/apt/trusted.gpg.d/pveport.gpg```
 
 ## Adds the download to the repository list
 ```echo "deb [arch=arm64] http://global.mirrors.apqa.cn/proxmox/debian/pve bookworm port" | sudo tee -a /etc/apt/sources.list```
 
 ## Checks the repository list for new downloads
-```apt update```
+```sudo apt update```
 
 ## Updates the Pi
-```apt dist-upgrade -y```
+```sudo apt dist-upgrade -y```
 
 ## Edit the interface file
-```nano /etc/network/interfaces```
+```sudo nano /etc/network/interfaces```
 
 ## Put this in your interfaces file and change the ip and gateway
 ![image](https://github.com/user-attachments/assets/c523b337-c890-4937-af00-af8df9198aff)
 
 ## Edit the hosts file
-```nano /etc/hosts```
+```sudo nano /etc/hosts```
 
 ## Install the pve-qemu-kvm package
-```apt install pve-qemu-kvm```
+```sudo apt install pve-qemu-kvm```
 
 ## Install the proxmox-ve package
-```apt install proxmox-ve```
+```sudo apt install proxmox-ve```
 
 ## Reboot your server
 ```reboot```
@@ -80,13 +80,13 @@ If the RPi-Connect doesnt want to start reinstall the entire OS and do the ```su
 ```sudo ip link set vmbr0 up```
 
 ## Download the Pimox install script
-```curl https://raw.githubusercontent.com/pimox/pimox7/master/RPiOS64-IA-Install.sh > RPiOS64-IA-Install.sh```
+```sudo curl https://raw.githubusercontent.com/pimox/pimox7/master/RPiOS64-IA-Install.sh > RPiOS64-IA-Install.sh```
 
 ## Makes the install script that it can run
-```chmod +x RPiOS64-IA-Install.sh```
+```sudo chmod +x RPiOS64-IA-Install.sh```
 
 ## Runs the Pimox script
-```./RPiOS64-IA-Install.sh```
+```sudo ./RPiOS64-IA-Install.sh```
 
 ## Reboot the server
 ```reboot```
@@ -95,10 +95,10 @@ If the RPi-Connect doesnt want to start reinstall the entire OS and do the ```su
 ```sudo -s```
 
 ## Updates the pi
-```apt upgrade -y```
+```sudo apt upgrade -y```
 
 ## In the proxmox shell run this command
-```bash -c "$(wget -qLO - https://github.com/tteck/Proxmox/raw/main/vm/pimox-haos-vm.sh)"```
+```sudo bash -c "$(wget -qLO - https://github.com/tteck/Proxmox/raw/main/vm/pimox-haos-vm.sh)"```
 
 Now stop the vm.
 In the VM options, enable QEMU Guest Agent.
