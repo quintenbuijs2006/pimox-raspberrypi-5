@@ -13,6 +13,8 @@ When the settings show up press edit and enable ssh then put a username and pass
 
 # Run the following commands to have proxmox on a raspberrypi 5 ^^
 
+If the RPi-Connect doesnt want to start reinstall the entire OS and do the ```sudo -s``` & ```apt update && apt upgrade -y``` later and run that command with sudo as user account
+
 ## makes the commands so you dont have to use sudo
 ```sudo -s```
 
