@@ -6,7 +6,7 @@ Run the following commands to have proxmox on a raspberrypi 5 ^^
 ## updates the resporitory list and updates the pi
 apt update && apt upgrade -y
 
-## Installs RPi-Connect so that you can access your Raspberry Pi from the internet at [https](https://connect.raspberrypi.com)
+## Installs RPi-Connect so that you can access your Raspberry Pi from the internet at [Raspberry Pi Connect Site](https://connect.raspberrypi.com)
 apt install rpi-connect-lite
 
 ## Turns the RPi-Connect on
