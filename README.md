@@ -16,7 +16,7 @@ When the settings show up press edit and enable ssh then put a username and pass
 ## makes the commands so you dont have to use sudo
 ```sudo -s```
 
-## updates the resporitory list and updates the pi
+## updates the resporitory list and updates the Pi
 ```apt update && apt upgrade -y```
 
 ## Installs RPi-Connect so that you can access your Raspberry Pi from the internet at [Raspberry Pi Connect Site](https://connect.raspberrypi.com)
@@ -44,24 +44,11 @@ When the settings show up press edit and enable ssh then put a username and pass
 ```nano /etc/network/interfaces```
 
 ## Put this in your interfaces file and change the ip and gateway
-auto lo
-iface lo inet loopback
-
-iface eth0 inet manual
-
-auto vmbr0
-iface vmbr0 inet static
-        address 192.168.68.71/24
-        gateway 192.168.68.1
-        bridge-ports eth0
-        bridge-stp off
-        bridge-fd 0
+![image](https://github.com/user-attachments/assets/c523b337-c890-4937-af00-af8df9198aff)
 
 ## Edit the host file and change the ip to your Raspberry Pi ip
 ```nano /etc/hosts```
-
-127.0.0.1	localhost
-192.168.68.71	rasberrypi
+![image](https://github.com/user-attachments/assets/5eee3c12-7cab-4c66-a65c-c521d8bc3694)
 
 ## Adds the vmbr0 Bridge
 ```sudo brctl addbr vmbr0```
