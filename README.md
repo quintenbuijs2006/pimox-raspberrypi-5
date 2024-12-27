@@ -55,10 +55,10 @@ If the RPi-Connect doesnt want to start reinstall the entire OS and do the ```su
 ```sudo nano /etc/hosts```
 
 ## Install the pve-qemu-kvm package
-```sudo apt install pve-qemu-kvm```
+```sudo apt install pve-qemu-kvm -y```
 
 ## Install the proxmox-ve package
-```sudo apt install proxmox-ve```
+```sudo apt install proxmox-ve -y```
 
 ## Reboot your server
 ```reboot```
