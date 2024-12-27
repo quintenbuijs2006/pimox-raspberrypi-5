@@ -40,7 +40,7 @@ When the settings show up press edit and enable ssh then put a username and pass
 ## Checks the repository list for new downloads
 ```apt update```
 
-## Updates the pi
+## Updates the Pi
 ```apt dist-upgrade -y```
 
 ## Edit the interface file
