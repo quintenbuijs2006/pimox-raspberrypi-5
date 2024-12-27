@@ -66,19 +66,6 @@ If the RPi-Connect doesnt want to start reinstall the entire OS and do the ```su
 ## Reboot your server
 ```sudo reboot```
 
-## Install the Bridge-Utils package
-```sudo apt install bridge-utils -y```
-
-## Adds the vmbr0 Bridge
-```sudo brctl addbr vmbr0```
-
-```sudo brctl addif vmbr0 eth0```
-
-## Change the ip to your Raspberry Pi ip
-```sudo ip addr add 192.168.68.71/24 dev vmbr0```
-
-```sudo ip link set vmbr0 up```
-
 ## Download the Pimox install script
 ```sudo curl https://raw.githubusercontent.com/pimox/pimox7/master/RPiOS64-IA-Install.sh > RPiOS64-IA-Install.sh```
 
@@ -109,3 +96,18 @@ In the VM options, resize the disk. Either 24 or 32 are okay. More than that and
 NOTE: THE “increment” IS THE AMOUNT THAT WILL ADD OVER THE EXISTING DISK.
 If you are running the 4GB model or plan on running more VMs, in the options menu, set the
 allocated RAM to 2 GB.
+
+# Troubleshooting
+## If the bridge vmbr0 does not exist use these commands
+## Install the Bridge-Utils package
+```sudo apt install bridge-utils -y```
+
+## Adds the vmbr0 Bridge
+```sudo brctl addbr vmbr0```
+
+```sudo brctl addif vmbr0 eth0```
+
+## Change the ip to your Raspberry Pi ip
+```sudo ip addr add 192.168.68.71/24 dev vmbr0```
+
+```sudo ip link set vmbr0 up```
