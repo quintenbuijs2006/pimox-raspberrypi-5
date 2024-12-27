@@ -11,6 +11,8 @@ Install This OS via the Raspberry Pi Imager
 
 When the settings show up press edit and enable ssh then put a username and password in there you want to use
 
+Or use the custom script i made in this github respository
+
 # Run the following commands to have proxmox on a raspberrypi 5 ^^
 
 If the RPi-Connect doesnt want to start reinstall the entire OS and do the ```sudo -s``` & ```apt update && apt upgrade -y``` later and run that command with sudo as user account
