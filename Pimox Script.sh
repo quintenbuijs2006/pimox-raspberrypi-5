@@ -95,4 +95,6 @@ done
 echo "Signing in with rpi-connect..."
 sudo rpi-connect signin
 
+loginctl enable-linger
+
 echo "Script completed successfully!"
