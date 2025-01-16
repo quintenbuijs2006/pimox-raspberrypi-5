@@ -89,7 +89,7 @@ If the RPi-Connect doesnt want to start run that command with a user account
 ## Updates the pi
 ```sudo apt upgrade -y```
 
-## In the proxmox shell run this command
+## In the proxmox shell run this command, its for homeassistant on raspberry pi
 ```sudo bash -c "$(wget -qLO - https://github.com/tteck/Proxmox/raw/main/vm/pimox-haos-vm.sh)"```
 
 Now stop the vm.
