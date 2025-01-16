@@ -78,7 +78,7 @@ If the RPi-Connect doesnt want to start run that command with a user account
 ```sudo reboot```
 
 ## Runs the Pimox script
-```sudo ./RPiOS64-IA-Install.sh```
+```./RPiOS64-IA-Install.sh```
 
 ## Reboot the server
 ```sudo reboot```
